@@ -3,9 +3,6 @@
 @import "variables";  
 
 /* estilo index*/
-body {
-	background: $fondo-color;
-}
 
 header {
 	margin-top: 10px;
@@ -22,24 +19,14 @@ nav {
 
 /* Header */
 
-#navbarNavDropdown {
-	display: flex;
-	position: relative;
-	justify-content: center;
-	align-items: baseline;
-	background:  $fondo-color;
-	font-family: $tipografia-principal;
-	color: $texto-color-principal;
-	font-size: 18px;
-}
-
 #navegacion {
 	padding: 0 0; 
+	background-color: $fondo-color !important;
 }
 
-.navbar-nav {
+#menu {
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 }
 
 #subMenu {
@@ -55,6 +42,8 @@ nav {
 	opacity: 0;
 	list-style: none;
 	padding-left: 0;
+	border-style: none;
+	top: 40px;
 }
 
 #subMenu li a {
@@ -74,15 +63,30 @@ nav {
 	opacity: 1;
 }
 
+.header__nav--collapse{
+	margin-left: 20px;
+}
+
+.dropdown-item:hover {
+  color: $texto-color-principal;
+  transition: all 500ms;
+  background-color: transparent; }
+
+.inicio-casa-moas {
+	margin-left: 70px;
+}
+
 .compras {
 	padding-right: 50px;
 }
 
 .quienesSomos-casa-moas {
+	margin-left: 90px;
 	padding-left: 100px;
 }
 
 .logo-casa-moas {
+	margin-left: 20px;
 	padding-left: 200px;
 }
 
@@ -317,6 +321,23 @@ a {
 .footer__navgacion--contacto {
   padding-right: 20px; }
 
+.footer__desarrollo {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.footer__fb {
+	width: 18px;
+  	height: 18px; 
+  	padding-right: 5px;
+}
+
+.footer__instagram {
+	width: 18px;
+  	height: 18px; 
+}
+
 /*estilo tienda*/
 body {
   background:  $fondo-color; }
@@ -332,72 +353,82 @@ nav {
   background:  $fondo-color; }
 
 /* Header */
-#navbarNavDropdown {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: baseline;
-  background:  $fondo-color;
-  font-family: $tipografia-principal;
-  color: $texto-color-principal;
-  font-size: 18px; }
-
 #navegacion {
-  padding: 0 0; }
-
-.navbar-nav {
-  display: flex;
-  align-items: center; }
+	padding: 0 0; 
+	background-color: $fondo-color !important;
+}
 
 #subMenu {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  z-index: 3;
-  position: 0;
-  position: absolute;
-  background:  $fondo-color;
-  max-width: 100%;
-  visibility: hidden;
-  opacity: 0;
-  list-style: none;
-  padding-left: 0; }
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	z-index: 3;
+	position: 0;
+	position: absolute;
+	background: $fondo-color;
+	max-width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	list-style: none;
+	padding-left: 0;
+	border-style: none;
+}
 
 #subMenu li a {
-  display: block;
-  padding: 15px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase;
-  height: 40px;
-  width: 100%;
-  text-align: left; }
+	display: block;
+	padding: 15px;
+	color:  $texto-color-principal;
+	font-family: $tipografia-principal;
+	text-decoration: none;
+	text-transform: lowercase;
+	height: 40px;
+	width: 100%;
+	text-align: left;
+}
 
-#menu li:hover #subMenu {
-  visibility: visible;
-  opacity: 1; }
+#menu li:hover #subMenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.dropdown-item:hover {
+  color: $texto-color-principal;
+  transition: all 500ms;
+  background-color: transparent; }
+
+.inicio-casa-moas {
+	margin-left: 70px;
+}
 
 .compras {
-  padding-right: 50px; }
+	padding-right: 50px;
+}
 
 .quienesSomos-casa-moas {
-  padding-left: 100px; }
+	margin-left: 90px;
+	padding-left: 100px;
+}
 
 .logo-casa-moas {
-  padding-left: 200px; }
+	margin-left: 20px;
+	padding-left: 200px;
+}
 
 .carrito {
-  width: 18px;
-  height: 18px; }
+	width: 18px;
+	height: 18px;
+}
 
 .fb {
-  width: 18px;
-  height: 18px; }
+	width: 18px;
+	height: 18px;
+	padding-right: 5px;
+}
 
 .instagram {
-  width: 18px;
-  height: 18px; }
+	width: 18px;
+	height: 18px;
+}
 
 /* Main */
 .tienda {
@@ -518,71 +549,113 @@ a {
   text-decoration: none;
   transition: all .3s; }
 
-.footer-inicio-cm {
+.footer__navegacion--inicio {
   padding-right: 20px; }
 
-.footer-quienesSomos-cm {
+.footer__navegacion--quienesSomos {
   padding-right: 20px; }
 
-.footer-contacto-cm {
+.footer__navgacion--contacto {
   padding-right: 20px; }
+
+.footer__desarrollo {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.footer__fb {
+	width: 18px;
+  	height: 18px; 
+  	padding-right: 5px;
+}
+
+.footer__instagram {
+	width: 18px;
+  	height: 18px; 
+}
 
 /*estilo quienes somos*/
 body {
   background: $fondo-color; }
 
 /* Header */
-.navegacion {
-  width: 1000px;
-  margin: 30px auto;
-  background:  $fondo-color; }
+#navegacion {
+	padding: 0 0; 
+	background-color: $fondo-color !important;
+}
 
-.navegacion ul {
-  list-style: none; }
+#subMenu {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	z-index: 3;
+	position: 0;
+	position: absolute;
+	background: $fondo-color;
+	max-width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	list-style: none;
+	padding-left: 0;
+	border-style: none;
+}
 
-.menu > li {
-  position: relative;
-  display: inline-block;
-  padding-left: 40px; }
+#subMenu li a {
+	display: block;
+	padding: 15px;
+	color:  $texto-color-principal;
+	font-family: $tipografia-principal;
+	text-decoration: none;
+	text-transform: lowercase;
+	height: 40px;
+	width: 100%;
+	text-align: left;
+}
 
-.menu > li > a {
-  display: block;
-  padding: 15px 20px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-size: 18px; }
+#menu li:hover #subMenu{
+	visibility: visible;
+	opacity: 1;
+}
 
-.menu li a:hover {
-  color: #a3a3a3;
-  transition: all .3s; }
+.dropdown-item:hover {
+  color: $texto-color-principal;
+  transition: all 500ms;
+  background-color: transparent; }
 
-.submenu {
-  position: absolute;
-  background:  $fondo-color;
-  width: 100%;
-  visibility: hidden;
-  opacity: 0;
-  list-style: none; }
+.inicio-casa-moas {
+	margin-left: 70px;
+}
 
-.submenu li a {
-  display: block;
-  padding: 15px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase; }
+.compras {
+	padding-right: 50px;
+}
 
-.menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1; }
+.quienesSomos-casa-moas {
+	margin-left: 90px;
+	padding-left: 100px;
+}
 
-.logo {
-  float: center;
-  padding: 5px;
-  height: 80px;
-  width: 270px; }
+.logo-casa-moas {
+	margin-left: 20px;
+	padding-left: 200px;
+}
+
+.carrito {
+	width: 18px;
+	height: 18px;
+}
+
+.fb {
+	width: 18px;
+	height: 18px;
+	padding-right: 5px;
+}
+
+.instagram {
+	width: 18px;
+	height: 18px;
+}
 
 /* Main */
 .main-quienes-somos {
@@ -640,6 +713,8 @@ a {
   color:  $texto-color-principal; }
 
 .footer {
+  display: flex;
+  justify-content: center;
   width: 1000px;
   margin: 30px auto;
   background:  $fondo-color; }
@@ -654,62 +729,118 @@ a {
   padding: 15px 20px;
   font-size: 16px; }
 
+.footer li a:hover {
+  color: #212529;
+  text-decoration: none;
+  transition: all .3s; }
+
+.footer__navegacion--inicio {
+  padding-right: 20px; }
+
+.footer__navegacion--quienesSomos {
+  padding-right: 20px; }
+
+.footer__navgacion--contacto {
+  padding-right: 20px; }
+
+.footer__desarrollo {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.footer__fb {
+	width: 18px;
+  	height: 18px; 
+  	padding-right: 5px;
+}
+
+.footer__instagram {
+	width: 18px;
+  	height: 18px; 
+}
+
 /*estilo productos*/
 body {
   background:  $fondo-color; }
 
 /* Header */
-.navegacion {
-  width: 1000px;
-  margin: 30px auto;
-  background:  $fondo-color; }
+#navegacion {
+	padding: 0 0; 
+	background-color: $fondo-color !important;
+}
 
-.navegacion ul {
-  list-style: none; }
+#subMenu {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	z-index: 3;
+	position: 0;
+	position: absolute;
+	background: $fondo-color;
+	max-width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	list-style: none;
+	padding-left: 0;
+	border-style: none;
+}
 
-.menu > li {
-  position: relative;
-  display: inline-block;
-  padding-left: 40px; }
+#subMenu li a {
+	display: block;
+	padding: 15px;
+	color:  $texto-color-principal;
+	font-family: $tipografia-principal;
+	text-decoration: none;
+	text-transform: lowercase;
+	height: 40px;
+	width: 100%;
+	text-align: left;
+}
 
-.menu > li > a {
-  display: block;
-  padding: 15px 20px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-size: 18px; }
+#menu li:hover #subMenu{
+	visibility: visible;
+	opacity: 1;
+}
 
-.menu li a:hover {
-  color: #a3a3a3;
-  transition: all .3s; }
+.dropdown-item:hover {
+  color: $texto-color-principal;
+  transition: all 500ms;
+  background-color: transparent; }
 
-.submenu {
-  position: absolute;
-  background:  $fondo-color;
-  width: 100%;
-  visibility: hidden;
-  opacity: 0;
-  list-style: none; }
+.inicio-casa-moas {
+	margin-left: 70px;
+}
 
-.submenu li a {
-  display: block;
-  padding: 15px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase; }
+.compras {
+	padding-right: 50px;
+}
 
-.menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1; }
+.quienesSomos-casa-moas {
+	margin-left: 90px;
+	padding-left: 100px;
+}
 
-.logo {
-  float: center;
-  padding: 5px;
-  height: 80px;
-  width: 270px; }
+.logo-casa-moas {
+	margin-left: 20px;
+	padding-left: 200px;
+}
+
+.carrito {
+	width: 18px;
+	height: 18px;
+}
+
+.fb {
+	width: 18px;
+	height: 18px;
+	padding-right: 5px;
+}
+
+.instagram {
+	width: 18px;
+	height: 18px;
+}
 
 /* Main */
 .productosh1 {
@@ -1103,6 +1234,8 @@ a {
   color:  $texto-color-principal; }
 
 .footer {
+  display: flex;
+  justify-content: center;
   width: 1000px;
   margin: 30px auto;
   background:  $fondo-color; }
@@ -1116,6 +1249,37 @@ a {
   display: block;
   padding: 15px 20px;
   font-size: 16px; }
+
+.footer li a:hover {
+  color: #212529;
+  text-decoration: none;
+  transition: all .3s; }
+
+.footer__navegacion--inicio {
+  padding-right: 20px; }
+
+.footer__navegacion--quienesSomos {
+  padding-right: 20px; }
+
+.footer__navgacion--contacto {
+  padding-right: 20px; }
+
+.footer__desarrollo {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.footer__fb {
+	width: 18px;
+  	height: 18px; 
+  	padding-right: 5px;
+}
+
+.footer__instagram {
+	width: 18px;
+  	height: 18px; 
+}
 
 /*estilo deco*/
 body {
@@ -1183,6 +1347,8 @@ a {
   color:  $texto-color-principal; }
 
 .footer {
+  display: flex;
+  justify-content: center;
   width: 1000px;
   margin: 30px auto;
   background:  $fondo-color; }
@@ -1197,141 +1363,117 @@ a {
   padding: 15px 20px;
   font-size: 16px; }
 
-/*estilo mobiliario*/
-body {
-  background:  $fondo-color; }
-
-.navegacion {
-  width: 1000px;
-  margin: 30px auto;
-  background:  $fondo-color; }
-
-.navegacion ul {
-  list-style: none; }
-
-.menu > li {
-  position: relative;
-  display: inline-block;
-  padding-left: 40px; }
-
-.menu > li > a {
-  display: block;
-  padding: 15px 20px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
+.footer li a:hover {
+  color: #212529;
   text-decoration: none;
-  text-transform: lowercase;
-  font-size: 18px; }
-
-.menu li a:hover {
-  color: #a3a3a3;
   transition: all .3s; }
 
-.submenu {
-  position: absolute;
-  background:  $fondo-color;
-  width: 100%;
-  visibility: hidden;
-  opacity: 0;
-  list-style: none; }
+.footer__navegacion--inicio {
+  padding-right: 20px; }
 
-.submenu li a {
-  display: block;
-  padding: 15px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase; }
+.footer__navegacion--quienesSomos {
+  padding-right: 20px; }
 
-.menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1; }
+.footer__navgacion--contacto {
+  padding-right: 20px; }
 
-.logo {
-  float: center;
-  padding: 5px;
-  height: 80px;
-  width: 270px; }
+.footer__desarrollo {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+}
 
-footer {
-  background:  $fondo-color; }
+.footer__fb {
+	width: 18px;
+  	height: 18px; 
+  	padding-right: 5px;
+}
 
-a {
-  text-decoration: none; }
-
-a {
-  color:  $texto-color-principal; }
-
-.footer {
-  width: 1000px;
-  margin: 30px auto;
-  background:  $fondo-color; }
-
-.footer ul {
-  list-style: none;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase;
-  display: block;
-  padding: 15px 20px;
-  font-size: 16px; }
+.footer__instagram {
+	width: 18px;
+  	height: 18px; 
+}
 
 /*estilo niños*/
 body {
   background:  $fondo-color; }
 
-.navegacion {
-  width: 1000px;
-  margin: 30px auto;
-  background:  $fondo-color; }
+#navegacion {
+	padding: 0 0; 
+	background-color: $fondo-color !important;
+}
 
-.navegacion ul {
-  list-style: none; }
+#subMenu {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	z-index: 3;
+	position: 0;
+	position: absolute;
+	background: $fondo-color;
+	max-width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	list-style: none;
+	padding-left: 0;
+	border-style: none;
+}
 
-.menu > li {
-  position: relative;
-  display: inline-block;
-  padding-left: 40px; }
+#subMenu li a {
+	display: block;
+	padding: 15px;
+	color:  $texto-color-principal;
+	font-family: $tipografia-principal;
+	text-decoration: none;
+	text-transform: lowercase;
+	height: 40px;
+	width: 100%;
+	text-align: left;
+}
 
-.menu > li > a {
-  display: block;
-  padding: 15px 20px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-size: 18px; }
+#menu li:hover #subMenu{
+	visibility: visible;
+	opacity: 1;
+}
 
-.menu li a:hover {
-  color: #a3a3a3;
-  transition: all .3s; }
+.dropdown-item:hover {
+  color: $texto-color-principal;
+  transition: all 500ms;
+  background-color: transparent; }
 
-.submenu {
-  position: absolute;
-  background:  $fondo-color;
-  width: 100%;
-  visibility: hidden;
-  opacity: 0;
-  list-style: none; }
+.inicio-casa-moas {
+	margin-left: 70px;
+}
 
-.submenu li a {
-  display: block;
-  padding: 15px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase; }
+.compras {
+	padding-right: 50px;
+}
 
-.menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1; }
+.quienesSomos-casa-moas {
+	margin-left: 90px;
+	padding-left: 100px;
+}
 
-.logo {
-  float: center;
-  padding: 5px;
-  height: 80px;
-  width: 270px; }
+.logo-casa-moas {
+	margin-left: 20px;
+	padding-left: 200px;
+}
+
+.carrito {
+	width: 18px;
+	height: 18px;
+}
+
+.fb {
+	width: 18px;
+	height: 18px;
+	padding-right: 5px;
+}
+
+.instagram {
+	width: 18px;
+	height: 18px;
+}
 
 footer {
   background:  $fondo-color; }
@@ -1343,6 +1485,8 @@ a {
   color:  $texto-color-principal; }
 
 .footer {
+  display: flex;
+  justify-content: center;
   width: 1000px;
   margin: 30px auto;
   background:  $fondo-color; }
@@ -1356,62 +1500,118 @@ a {
   display: block;
   padding: 15px 20px;
   font-size: 16px; }
+
+.footer li a:hover {
+  color: #212529;
+  text-decoration: none;
+  transition: all .3s; }
+
+.footer__navegacion--inicio {
+  padding-right: 20px; }
+
+.footer__navegacion--quienesSomos {
+  padding-right: 20px; }
+
+.footer__navgacion--contacto {
+  padding-right: 20px; }
+
+.footer__desarrollo {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.footer__fb {
+	width: 18px;
+  	height: 18px; 
+  	padding-right: 5px;
+}
+
+.footer__instagram {
+	width: 18px;
+  	height: 18px; 
+}
 
 /*estilo librería*/
 body {
   background:  $fondo-color; }
 
-.navegacion {
-  width: 1000px;
-  margin: 30px auto;
-  background:  $fondo-color; }
+#navegacion {
+	padding: 0 0; 
+	background-color: $fondo-color !important;
+}
 
-.navegacion ul {
-  list-style: none; }
+#subMenu {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	z-index: 3;
+	position: 0;
+	position: absolute;
+	background: $fondo-color;
+	max-width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	list-style: none;
+	padding-left: 0;
+	border-style: none;
+}
 
-.menu > li {
-  position: relative;
-  display: inline-block;
-  padding-left: 40px; }
+#subMenu li a {
+	display: block;
+	padding: 15px;
+	color:  $texto-color-principal;
+	font-family: $tipografia-principal;
+	text-decoration: none;
+	text-transform: lowercase;
+	height: 40px;
+	width: 100%;
+	text-align: left;
+}
 
-.menu > li > a {
-  display: block;
-  padding: 15px 20px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-size: 18px; }
+#menu li:hover #subMenu{
+	visibility: visible;
+	opacity: 1;
+}
 
-.menu li a:hover {
-  color: #a3a3a3;
-  transition: all .3s; }
+.dropdown-item:hover {
+  color: $texto-color-principal;
+  transition: all 500ms;
+  background-color: transparent; }
 
-.submenu {
-  position: absolute;
-  background:  $fondo-color;
-  width: 100%;
-  visibility: hidden;
-  opacity: 0;
-  list-style: none; }
+.inicio-casa-moas {
+	margin-left: 70px;
+}
 
-.submenu li a {
-  display: block;
-  padding: 15px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase; }
+.compras {
+	padding-right: 50px;
+}
 
-.menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1; }
+.quienesSomos-casa-moas {
+	margin-left: 90px;
+	padding-left: 100px;
+}
 
-.logo {
-  float: center;
-  padding: 5px;
-  height: 80px;
-  width: 270px; }
+.logo-casa-moas {
+	margin-left: 20px;
+	padding-left: 200px;
+}
+
+.carrito {
+	width: 18px;
+	height: 18px;
+}
+
+.fb {
+	width: 18px;
+	height: 18px;
+	padding-right: 5px;
+}
+
+.instagram {
+	width: 18px;
+	height: 18px;
+}
 
 footer {
   background:  $fondo-color; }
@@ -1423,6 +1623,8 @@ a {
   color:  $texto-color-principal; }
 
 .footer {
+  display: flex;
+  justify-content: center;
   width: 1000px;
   margin: 30px auto;
   background:  $fondo-color; }
@@ -1436,63 +1638,119 @@ a {
   display: block;
   padding: 15px 20px;
   font-size: 16px; }
+
+.footer li a:hover {
+  color: #212529;
+  text-decoration: none;
+  transition: all .3s; }
+
+.footer__navegacion--inicio {
+  padding-right: 20px; }
+
+.footer__navegacion--quienesSomos {
+  padding-right: 20px; }
+
+.footer__navgacion--contacto {
+  padding-right: 20px; }
+
+.footer__desarrollo {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.footer__fb {
+	width: 18px;
+  	height: 18px; 
+  	padding-right: 5px;
+}
+
+.footer__instagram {
+	width: 18px;
+  	height: 18px; 
+}
 
 /*estilo contacto*/
 body {
   background: $fondo-color; }
 
 /* Header */
-.navegacion {
-  width: 1000px;
-  margin: 30px auto;
-  background:  $fondo-color; }
+#navegacion {
+	padding: 0 0; 
+	background-color: $fondo-color !important;
+}
 
-.navegacion ul {
-  list-style: none; }
+#subMenu {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	z-index: 3;
+	position: 0;
+	position: absolute;
+	background: $fondo-color;
+	max-width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	list-style: none;
+	padding-left: 0;
+	border-style: none;
+}
 
-.menu > li {
-  position: relative;
-  display: inline-block;
-  padding-left: 40px; }
+#subMenu li a {
+	display: block;
+	padding: 15px;
+	color:  $texto-color-principal;
+	font-family: $tipografia-principal;
+	text-decoration: none;
+	text-transform: lowercase;
+	height: 40px;
+	width: 100%;
+	text-align: left;
+}
 
-.menu > li > a {
-  display: block;
-  padding: 15px 20px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-size: 18px; }
+#menu li:hover #subMenu{
+	visibility: visible;
+	opacity: 1;
+}
 
-.menu li a:hover {
-  color: #a3a3a3;
-  transition: all .3s; }
+.dropdown-item:hover {
+  color: $texto-color-principal;
+  transition: all 500ms;
+  background-color: transparent; }
 
-.submenu {
-  position: absolute;
-  background:  $fondo-color;
-  width: 100%;
-  visibility: hidden;
-  opacity: 0;
-  list-style: none; }
+.inicio-casa-moas {
+	margin-left: 70px;
+}
 
-.submenu li a {
-  display: block;
-  padding: 15px;
-  color:  $texto-color-principal;
-  font-family: $tipografia-principal;
-  text-decoration: none;
-  text-transform: lowercase; }
+.compras {
+	padding-right: 50px;
+}
 
-.menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1; }
+.quienesSomos-casa-moas {
+	margin-left: 90px;
+	padding-left: 100px;
+}
 
-.logo {
-  float: center;
-  padding: 5px;
-  height: 80px;
-  width: 270px; }
+.logo-casa-moas {
+	margin-left: 20px;
+	padding-left: 200px;
+}
+
+.carrito {
+	width: 18px;
+	height: 18px;
+}
+
+.fb {
+	width: 18px;
+	height: 18px;
+	padding-right: 5px;
+}
+
+.instagram {
+	width: 18px;
+	height: 18px;
+}
 
 /* Main */
 .saludo {
@@ -1538,13 +1796,9 @@ a {
 a {
   color:  $texto-color-principal; }
 
-legend {
-  color:  $texto-color-principal; }
-
-label {
-  color:  $texto-color-principal; }
-
 .footer {
+  display: flex;
+  justify-content: center;
   width: 1000px;
   margin: 30px auto;
   background:  $fondo-color; }
@@ -1559,33 +1813,124 @@ label {
   padding: 15px 20px;
   font-size: 16px; }
 
+.footer li a:hover {
+  color: #212529;
+  text-decoration: none;
+  transition: all .3s; }
+
+.footer__navegacion--inicio {
+  padding-right: 20px; }
+
+.footer__navegacion--quienesSomos {
+  padding-right: 20px; }
+
+.footer__navgacion--contacto {
+  padding-right: 20px; }
+
+.footer__desarrollo {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.footer__fb {
+	width: 18px;
+  	height: 18px; 
+  	padding-right: 5px;
+}
+
+.footer__instagram {
+	width: 18px;
+  	height: 18px; 
+}
+
 /* Media queries */
 
-@media only screen and (max-width: 1200px) and (min-width: 1000px) {
-  header #logoCasaMoas {
-    padding-left: 90px; }
-  #quienesSomos-casa-moas {
-    padding-left: 10px; }
-  a .Container__fotosChicas--dimensiones {
-    padding-left: 125px;
-    padding-right: 125px; }
-  .containerNavCM {
-    padding-left: 50px; }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0; } }
+/* tablet */
+@media only screen and (max-width: 768px) 
+{
+.inicio-casa-moas {
+	margin-left: 20px;}
 
-@media only screen and (max-width: 1000px) and (min-width: 992px) {
-  #logoCasaMoas {
-    padding-left: 100px !important; }
-  #quienesSomos-casa-moas {
-    padding-left: 10px; } }
+.compras {
+	display: none;
+}
 
-@media only screen and (max-width: 992px) and (min-width: 768px) {
-  #containerCarruselInicio {
-    width: 974px !important;
-    height: auto; } }
+.quienesSomos-casa-moas {
+ 	margin-left: 0px;
+  	padding-left: 0px; }
 
-@media only screen and (max-width: 768px) and (min-width: 768px) {
-  #containerCarruselInicio {
-    width: 578px !important;
-    height: auto; } }
+.logo-casa-moas {
+	padding-left: 0px;
+   }
+
+.fb {
+  	display: none;
+}
+
+.instagram {
+	display: none;
+}
+
+.Container__fotosChicas--dimensiones {
+	padding-left: 15px;
+  	padding-right: 15px;
+}
+
+.mapainfo {
+	padding-right: 0px;
+}
+
+.footer {
+ 	padding-right: 200px;
+ 	margin-top: 400px;
+ }
+
+.footer__fb {
+	padding-right: 5px; 
+}
+
+}
+
+/* celular */
+@media only screen and (max-width: 414px)  
+{
+.inicio-casa-moas {
+	margin-left: 0px;}
+
+.compras {
+ 	display: none; }
+
+.quienesSomos-casa-moas {
+ 	margin-left: 0px;
+  	padding-left: 0px; }
+
+.logo-casa-moas {
+  	display: none; }
+
+.fb {
+  	display: none;
+}
+
+.instagram {
+	display: none;
+}
+
+.contenedorProductos {
+	margin-left: 0px; 
+}
+
+.mapainfo {
+	padding-right: 0px;
+}
+
+.footer {
+  	padding-right: 600px;
+	padding-left: 0px}
+
+.footer__fb {
+	padding-right: 5px; 
+}
+
+}
+
